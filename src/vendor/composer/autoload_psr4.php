@@ -205,6 +205,7 @@ return array(
     'League\\CLImate\\' => array($vendorDir . '/league/climate/src'),
     'JsonSchema\\' => array($vendorDir . '/justinrainbow/json-schema/src/JsonSchema'),
     'Interop\\Container\\' => array($vendorDir . '/container-interop/container-interop/src/Interop/Container'),
+    'Ho\\Templatehints\\' => array($vendorDir . '/honl/magento2-templatehints'),
     'Doctrine\\Instantiator\\' => array($vendorDir . '/doctrine/instantiator/src/Doctrine/Instantiator'),
     'DeepCopy\\' => array($vendorDir . '/myclabs/deep-copy/src/DeepCopy'),
     'Composer\\Spdx\\' => array($vendorDir . '/composer/spdx-licenses/src'),

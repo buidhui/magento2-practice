@@ -30,6 +30,19 @@ class Interceptor extends \Magento\Framework\View\Layout implements \Magento\Fra
     /**
      * {@inheritdoc}
      */
+    public function renderElement($name, $useCache = true)
+    {
+        $pluginInfo = $this->pluginList->getNext($this->subjectType, 'renderElement');
+        if (!$pluginInfo) {
+            return parent::renderElement($name, $useCache);
+        } else {
+            return $this->___callPlugins('renderElement', func_get_args(), $pluginInfo);
+        }
+    }
+
+    /**
+     * {@inheritdoc}
+     */
     public function getOutput()
     {
         $pluginInfo = $this->pluginList->getNext($this->subjectType, 'getOutput');
