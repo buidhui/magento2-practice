@@ -1,0 +1,5 @@
+{
+    "require-dev": {
+        "honl/magento2-templatehints": "^0.2.5"
+    }
+}
